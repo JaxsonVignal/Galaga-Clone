@@ -1,4 +1,3 @@
-
 // Gives access to Unity types like Vector2 and Vector3
 using UnityEngine;
 

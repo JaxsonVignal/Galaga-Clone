@@ -8,7 +8,7 @@ public class Player : Ship
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -16,7 +16,7 @@ public class Player : Ship
     {
         float direction = 0f;
 
-        if(Keyboard.current.aKey.isPressed  || Keyboard.current.leftArrowKey.isPressed)
+        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
         {
             direction = -1f;
         }
@@ -34,12 +34,12 @@ public class Player : Ship
 
         transform.position = pos;
 
-        if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             Shoot();
         }
 
-        
+
     }
 
     public override void Shoot()

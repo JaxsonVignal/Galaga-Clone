@@ -36,7 +36,7 @@ public abstract class Ship : MonoBehaviour, IDamageable
 
     public void Move(Vector2 direction, float speedMult)
     {
-        transform.Translate(direction * moveSpeed *  speedMult * Time.deltaTime);
+        transform.Translate(direction * moveSpeed * speedMult * Time.deltaTime);
     }
 
 
